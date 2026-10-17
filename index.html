@@ -1,0 +1,178 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws Pet Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff914d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ffe0bd;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #a64b00;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 230px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #ddd;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card button {
+            background-color: #ff914d;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #e66b20;
+        }
+
+        .about {
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐾 Happy Paws Pet Shop 🐾</h1>
+        <p>Your pets deserve the best!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Pets & Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Happy Paws!</h2>
+        <p>Everything your cats and dogs need, all in one place.</p>
+        <p>Food, toys, accessories and lots of love! ❤️</p>
+    </section>
+
+    <section class="products" id="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400"
+                 alt="Cute cat">
+            <h3>Lovely Cats 🐱</h3>
+            <p>Price: ₹2,500</p>
+            <button onclick="alert('Thank you for your interest in our cats!')">
+                Learn More
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=400"
+                 alt="Cute dog">
+            <h3>Friendly Dogs 🐶</h3>
+            <p>Price: ₹5,000</p>
+            <button onclick="alert('Thank you for your interest in our dogs!')">
+                Learn More
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400"
+                 alt="Dog food">
+            <h3>Pet Food 🦴</h3>
+            <p>Price: ₹499</p>
+            <button onclick="alert('Thanks for checking our pet food!')">
+                Shop Now
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400"
+                 alt="Dog with accessories">
+            <h3>Pet Accessories 🎾</h3>
+            <p>Price: ₹299</p>
+            <button onclick="alert('Thanks for checking our accessories!')">
+                Shop Now
+            </button>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Happy Paws</h2>
+        <p>We love animals and want every pet to live a happy,
+           healthy and comfortable life.</p>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: happypaws@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>© 2026 Happy Paws Pet Shop</p>
+    </footer>
+
+</body>
+</html>
+```
