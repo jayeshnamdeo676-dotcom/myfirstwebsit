@@ -2,7 +2,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="image.png">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Logos Grid</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffffff;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 600px;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+        }
+        .logo-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* placeholder styles for logos */
+        .circle-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+        }
+        .pepsi { background: linear-gradient(135deg, #004b93 50%, #d51c29 50%); }
+        .kfc { background-color: #a30000; }
+        .bk { background-color: #f2a900; color: #124076; border: 4px solid #124076; height: 72px; width: 72px;}
+        .harvard { background-color: #a51c30; font-size: 10px;}
+        
+        .text-logo {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+        .nasa { color: #e30613; font-family: 'Courier New', Courier, monospace; letter-spacing: 2px;}
+        .apple { font-size: 60px; color: #000000; }
+        .google { font-family: 'Product Sans', sans-serif; }
+        .g-blue { color: #4285F4; }
+        .g-red { color: #EA4335; }
+        .g-yellow { color: #FBBC05; }
+        .g-green { color: #34A853; }
+    </style>
+</head>
+<body>
+
+    <!-- Alternative 1: Displaying the image directly via a source link -->
+    <!-- 
+    <img src="path_to_your_image.png" alt="Brand Logos" style="max-width: 100%; height: auto;"> 
+    -->
+
+    <!-- Alternative 2: Structured HTML/CSS Layout mimicking the image configuration -->
+    <div class="logo-container">
+        <!-- Top Row -->
+        <div class="row">
+            <div class="logo-item circle-logo pepsi">Pepsi</div>
+            <div class="logo-item circle-logo kfc">KFC</div>
+            <div class="logo-item circle-logo bk">BURGER<br>KING</div>
+            <div class="logo-item circle-logo harvard">Harvard</div>
+        </div>
+        
+        <!-- Bottom Row -->
+        <div class="row" style="margin-top: 10px;">
+            <div class="logo-item text-logo nasa">NASA</div>
+            <div class="logo-item apple">&#63743;</div>
+            <div class="logo-item text-logo google">
+                <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Paws Pet Shop</title>
