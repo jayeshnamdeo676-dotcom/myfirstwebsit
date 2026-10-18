@@ -1,276 +1,287 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brand Logos Grid</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #ffffff;
-            margin: 0;
-            font-family: sans-serif;
-        }
-        .logo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            max-width: 600px;
-            padding: 20px;
-        }
-        .row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            width: 100%;
-        }
-        .logo-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        /* placeholder styles for logos */
-        .circle-logo {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            color: white;
-            text-align: center;
-            font-size: 12px;
-        }
-        .pepsi { background: linear-gradient(135deg, #004b93 50%, #d51c29 50%); }
-        .kfc { background-color: #a30000; }
-        .bk { background-color: #f2a900; color: #124076; border: 4px solid #124076; height: 72px; width: 72px;}
-        .harvard { background-color: #a51c30; font-size: 10px;}
-        
-        .text-logo {
-            font-size: 32px;
-            font-weight: bold;
-            letter-spacing: -1px;
-        }
-        .nasa { color: #e30613; font-family: 'Courier New', Courier, monospace; letter-spacing: 2px;}
-        .apple { font-size: 60px; color: #000000; }
-        .google { font-family: 'Product Sans', sans-serif; }
-        .g-blue { color: #4285F4; }
-        .g-red { color: #EA4335; }
-        .g-yellow { color: #FBBC05; }
-        .g-green { color: #34A853; }
-    </style>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Alternative 1: Displaying the image directly via a source link -->
-    <!-- 
-    <img src="path_to_your_image.png" alt="Brand Logos" style="max-width: 100%; height: auto;"> 
-    -->
+  <title>Happy Paws Pet Shop</title>
 
-    <!-- Alternative 2: Structured HTML/CSS Layout mimicking the image configuration -->
-    <div class="logo-container">
-        <!-- Top Row -->
-        <div class="row">
-            <div class="logo-item circle-logo pepsi">Pepsi</div>
-            <div class="logo-item circle-logo kfc">KFC</div>
-            <div class="logo-item circle-logo bk">BURGER<br>KING</div>
-            <div class="logo-item circle-logo harvard">Harvard</div>
-        </div>
-        
-        <!-- Bottom Row -->
-        <div class="row" style="margin-top: 10px;">
-            <div class="logo-item text-logo nasa">NASA</div>
-            <div class="logo-item apple">&#63743;</div>
-            <div class="logo-item text-logo google">
-                <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
-            </div>
-        </div>
-    </div>
+  <!-- Seven-logo picture for the browser tab -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
-</body>
-</html>
+  <meta name="description" content="Happy Paws Pet Shop — food, toys and accessories for your furry friends.">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Paws Pet Shop</title>
+  <style>
+    :root {
+      --orange: #ff8a24;
+      --orange-dark: #e46d08;
+      --cream: #fff8ef;
+      --ink: #272727;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff8f0;
-            color: #333;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        header {
-            background-color: #ff914d;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        nav {
-            background-color: #333;
-            padding: 15px;
-            text-align: center;
-        }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #fffdf9;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-weight: bold;
-        }
+    header {
+      background: var(--orange);
+      color: white;
+      padding: 24px 16px;
+      text-align: center;
+    }
 
-        .hero {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #ffe0bd;
-        }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 5vw, 2.7rem);
+    }
 
-        .hero h2 {
-            font-size: 32px;
-            color: #a64b00;
-        }
+    header p {
+      margin: 0;
+      font-size: 1.05rem;
+    }
 
-        .products {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            padding: 30px;
-        }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+      background: #292929;
+    }
 
-        .card {
-            background: white;
-            width: 230px;
-            padding: 20px;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px #ddd;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 9px 14px;
+      border-radius: 18px;
+      font-weight: bold;
+    }
 
-        .card img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+    nav a:hover,
+    nav a:focus {
+      background: var(--orange);
+    }
 
-        .card button {
-            background-color: #ff914d;
-            color: white;
-            border: none;
-            padding: 10px 18px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    .hero {
+      text-align: center;
+      padding: 48px 18px;
+      background: var(--cream);
+    }
 
-        .card button:hover {
-            background-color: #e66b20;
-        }
+    .hero h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+    }
 
-        .about {
-            text-align: center;
-            padding: 30px;
-        }
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 22px;
+      line-height: 1.6;
+    }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    .cta {
+      display: inline-block;
+      color: white;
+      background: var(--orange-dark);
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 24px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 32px 18px 42px;
+    }
+
+    section {
+      scroll-margin-top: 18px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 4px 0 24px;
+      font-size: 1.8rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #eee4d8;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 5px 16px #40280a0d;
+    }
+
+    .card img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      display: block;
+      background: #f3eee7;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      color: var(--orange-dark);
+    }
+
+    .card p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .about {
+      margin-top: 42px;
+      padding: 28px;
+      background: var(--cream);
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 760px;
+      margin: 10px auto 0;
+      line-height: 1.7;
+    }
+
+    footer {
+      background: #292929;
+      color: white;
+      text-align: center;
+      padding: 22px 14px;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+  </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>🐾 Happy Paws Pet Shop 🐾</h1>
-        <p>Your pets deserve the best!</p>
-    </header>
+  <header>
+    <h1>🐾 Happy Paws Pet Shop</h1>
+    <p>Everything your furry friend needs!</p>
+  </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Pets & Products</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#pets">Pets</a>
+    <a href="#food">Pet Food</a>
+    <a href="#accessories">Accessories</a>
+    <a href="#about">About Us</a>
+  </nav>
 
-    <section class="hero" id="home">
-        <h2>Welcome to Happy Paws!</h2>
-        <p>Everything your cats and dogs need, all in one place.</p>
-        <p>Food, toys, accessories and lots of love! ❤️</p>
-    </section>
+  <section class="hero" id="home">
+    <h2>Big Love for Little Paws</h2>
+    <p>
+      Welcome to Happy Paws Pet Shop! Explore pet essentials,
+      tasty treats, fun toys and accessories to keep your best
+      friend happy and healthy.
+    </p>
+    <a class="cta" href="#pets">Explore Our Shop</a>
+  </section>
 
-    <section class="products" id="products">
+  <main>
+    <section id="pets">
+      <h2 class="section-title">Meet Our Furry Friends</h2>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400"
-                 alt="Cute cat">
-            <h3>Lovely Cats 🐱</h3>
-            <p>Price: ₹2,500</p>
-            <button onclick="alert('Thank you for your interest in our cats!')">
-                Learn More
-            </button>
-        </div>
+      <div class="cards">
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=400"
-                 alt="Cute dog">
-            <h3>Friendly Dogs 🐶</h3>
-            <p>Price: ₹5,000</p>
-            <button onclick="alert('Thank you for your interest in our dogs!')">
-                Learn More
-            </button>
-        </div>
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80"
+            alt="A cute cat">
+          <div class="card-content">
+            <h3>Cats</h3>
+            <p>
+              Find cozy beds, scratchers and playful toys
+              for your curious kitty.
+            </p>
+          </div>
+        </article>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400"
-                 alt="Dog food">
-            <h3>Pet Food 🦴</h3>
-            <p>Price: ₹499</p>
-            <button onclick="alert('Thanks for checking our pet food!')">
-                Shop Now
-            </button>
-        </div>
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80"
+            alt="A happy golden dog">
+          <div class="card-content">
+            <h3>Dogs</h3>
+            <p>
+              Give your loyal friend comfortable gear,
+              chews and exciting toys.
+            </p>
+          </div>
+        </article>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400"
-                 alt="Dog with accessories">
-            <h3>Pet Accessories 🎾</h3>
-            <p>Price: ₹299</p>
-            <button onclick="alert('Thanks for checking our accessories!')">
-                Shop Now
-            </button>
-        </div>
+        <article class="card" id="food">
+          <img
+            src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=800&q=80"
+            alt="A bowl of pet food">
+          <div class="card-content">
+            <h3>Pet Food</h3>
+            <p>
+              Discover everyday meals and tasty treats
+              for your furry family.
+            </p>
+          </div>
+        </article>
 
+        <article class="card" id="accessories">
+          <img
+            src="https://images.unsplash.com/photo-1601758123927-196f5f6b8e8a?auto=format&fit=crop&w=800&q=80"
+            alt="Pet accessories and supplies">
+          <div class="card-content">
+            <h3>Accessories</h3>
+            <p>
+              Browse collars, bowls, leashes and other
+              useful pet essentials.
+            </p>
+          </div>
+        </article>
+
+      </div>
     </section>
 
     <section class="about" id="about">
-        <h2>About Happy Paws</h2>
-        <p>We love animals and want every pet to live a happy,
-           healthy and comfortable life.</p>
+      <h2>About Happy Paws</h2>
+      <p>
+        We believe pets are family. Happy Paws Pet Shop is
+        a practice website created to showcase a friendly
+        online pet store. Browse the categories and enjoy
+        exploring!
+      </p>
     </section>
+  </main>
 
-    <footer id="contact">
-        <h3>Contact Us</h3>
-        <p>Email: happypaws@example.com</p>
-        <p>Phone: +91 98765 43210</p>
-        <p>© 2026 Happy Paws Pet Shop</p>
-    </footer>
+  <footer>
+    <p>🐾 <strong>Happy Paws Pet Shop</strong></p>
+    <p>Made with love for pets and their people.</p>
+    <p>&copy; 2026 Happy Paws Pet Shop</p>
+  </footer>
 
 </body>
 </html>
-```
